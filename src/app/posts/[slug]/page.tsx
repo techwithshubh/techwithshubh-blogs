@@ -3,10 +3,14 @@ import DateFormatter from "@/app/components/posts/DateFormatter";
 import PostBody from "@/app/components/posts/PostBody";
 import { Tags } from "@/app/components/posts/Tags";
 import markdownToHtml from "@/lib/markdownToHtml";
-import { getPostBySlug } from "@/lib/posts";
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
+import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { notFound } from "next/navigation";
 
+type Params = {
+  params: {
+    slug: string;
+  };
+};
 
 export default async function Post({ params }: Params) {
   const post = getPostBySlug(params.slug);
@@ -26,9 +30,17 @@ export default async function Post({ params }: Params) {
         </div>
         <Tags tags={post.tags} />
         <div className="">
-            <PostBody content={content} />
+          <PostBody content={content} />
         </div>
       </article>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
