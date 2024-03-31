@@ -1,8 +1,9 @@
 import { getAllPosts } from "@/lib/posts";
 import { PostPreview } from "./components/posts/PostPreview";
+import { Post } from "@/interfaces/post";
 
 export default function Home() {
-  const allPosts = getAllPosts();
+  const allPosts: Post[] = getAllPosts();
 
   return (
     <>
@@ -97,15 +98,17 @@ export default function Home() {
               <path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z" />
             </svg>
           </a>
-          <div className="py-4 sm:py-6 lg-py-8 min-h-56">
-            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
-              {allPosts.map(({ slug, date, title }: any) => (
+          <div className="py-4 sm:py-6 lg-py-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+              {allPosts.map((post: Post) => (
                 <PostPreview
-                  key={slug}
-                  title={title}
-                  date={date}
-                  slug={slug}
-                  excerpt={"hello"}
+                  key={post.slug}
+                  title={post.title}
+                  date={post.date}
+                  slug={post.slug}
+                  coverImage={post.coverImage || ""}
+                  excerpt={post.excerpt}
+                  tags={ post.tags }
                 />
               ))}
             </div>
