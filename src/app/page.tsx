@@ -43,7 +43,7 @@ export default function Home() {
               >
                 <span className="text-sm font-medium text-black">
                   {" "}
-                  Sign Up{" "}
+                  Subscribe{" "}
                 </span>
 
                 <svg
