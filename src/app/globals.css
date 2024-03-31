@@ -2,6 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-  background-color: #000;
-} */
+@import url("../../node_modules/highlight.js/styles/base16/kimber.min.css");

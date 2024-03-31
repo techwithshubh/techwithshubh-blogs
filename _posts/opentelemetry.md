@@ -78,11 +78,11 @@ npm install @opentelemetry/sdk-trace-base \
 
 Now, let's understand the key components of a Trace Provider:
 
-* Resources represent the entities or attributes associated with our application. These could include information such as service name, version, environment, etc. Resources help contextualize traces and provide additional metadata.
+* **Resources** represent the entities or attributes associated with our application. These could include information such as service name, version, environment, etc. Resources help contextualize traces and provide additional metadata.
 
-* Processors manipulate spans before they are exported. They can be used for tasks like sampling, filtering, or adding additional attributes to spans. In our case, we'll keep the processor simple, but it's worth noting its importance for more complex tracing scenarios.
+* **Processors** manipulate spans before they are exported. They can be used for tasks like sampling, filtering, or adding additional attributes to spans. In our case, we'll keep the processor simple, but it's worth noting its importance for more complex tracing scenarios.
 
-* Exporters are responsible for transmitting trace data to a backend system for storage, analysis, and visualization. OpenTelemetry supports various exporters, including console, Zipkin, Jaeger, and others. For simplicity, we'll use the console exporter in this example.
+* **Exporters** are responsible for transmitting trace data to a backend system for storage, analysis, and visualization. OpenTelemetry supports various exporters, including console, Zipkin, Jaeger, and others. For simplicity, we'll use the console exporter in this example.
 
 **Initializing the Trace Provider**: We start by initializing the Trace Provider with the desired configuration, including the resource attributes, processor, and exporter.
 
