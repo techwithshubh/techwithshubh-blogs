@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Footer = () => {
   return (
     <footer className="bg-black">
@@ -26,7 +28,7 @@ export const Footer = () => {
             <ul className="mt-8 flex gap-6">
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/tech.withshubh/"
                   rel="noreferrer"
                   target="_blank"
                   className="text-white transition hover:opacity-75"
@@ -50,9 +52,9 @@ export const Footer = () => {
 
               <li>
                 <a
-                  href="#"
-                  rel="noreferrer"
+                  href="https://www.youtube.com/@tech.withshubh"
                   target="_blank"
+                  rel="noreferrer"
                   className="text-white transition hover:opacity-75"
                 >
                   <span className="sr-only">Youtube</span>
@@ -77,9 +79,9 @@ export const Footer = () => {
 
               <li>
                 <a
-                  href="#"
-                  rel="noreferrer"
+                  href="https://github.com/techwithshubh"
                   target="_blank"
+                  rel="noreferrer"
                   className="text-white transition hover:opacity-75"
                 >
                   <span className="sr-only">GitHub</span>
@@ -117,18 +119,19 @@ export const Footer = () => {
                 </li>
 
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    href="/resources"
                     className="text-gray-300 transition hover:opacity-75"
                   >
                     {" "}
                     Resources{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
                   <a
-                    href="#"
+                    href="https://www.youtube.com/@tech.withshubh"
+                    target="_blank"
                     className="text-gray-300 transition hover:opacity-75"
                   >
                     {" "}
@@ -138,7 +141,8 @@ export const Footer = () => {
 
                 <li>
                   <a
-                    href="#"
+                    href="https://github.com/techwithshubh"
+                    target="_blank"
                     className="text-gray-300 transition hover:opacity-75"
                   >
                     {" "}
@@ -196,7 +200,8 @@ export const Footer = () => {
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="https://www.youtube.com/@tech.withshubh"
+                    target="_blank"
                     className="text-gray-300 transition hover:opacity-75"
                   >
                     {" "}
@@ -206,7 +211,8 @@ export const Footer = () => {
 
                 <li>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/tech.withshubh/"
+                    target="_blank"
                     className="text-gray-300 transition hover:opacity-75"
                   >
                     {" "}

@@ -37,19 +37,20 @@ export const Header = () => {
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-white transition hover:text-pastal-blue text-lg font-semibold"
-                    href="#"
+                    href="/resources"
                   >
                     {" "}
                     Resources{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
                   <a
                     className="text-white transition hover:text-pastal-blue text-lg font-semibold"
-                    href="#"
+                    href="https://github.com/techwithshubh"
+                    target="_blank"
                   >
                     {" "}
                     Github{" "}
@@ -59,7 +60,8 @@ export const Header = () => {
                 <li>
                   <a
                     className="text-white transition hover:text-pastal-blue text-lg font-semibold"
-                    href="#"
+                    href="https://www.youtube.com/@tech.withshubh"
+                    target="_blank"
                   >
                     {" "}
                     Youtube{" "}

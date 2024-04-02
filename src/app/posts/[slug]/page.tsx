@@ -1,7 +1,7 @@
-import CoverImage from "@/app/components/posts/CoverImage";
-import DateFormatter from "@/app/components/posts/DateFormatter";
-import PostBody from "@/app/components/posts/PostBody";
-import { Tags } from "@/app/components/posts/Tags";
+import CoverImage from "@/components/posts/CoverImage";
+import DateFormatter from "@/components/posts/DateFormatter";
+import PostBody from "@/components/posts/PostBody";
+import { Tags } from "@/components/posts/Tags";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { notFound } from "next/navigation";
