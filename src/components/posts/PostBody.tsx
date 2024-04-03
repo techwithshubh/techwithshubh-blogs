@@ -1,6 +1,6 @@
 'use client'
 
-import markdownStyles from '@/app/components/markdown.module.css';
+import markdownStyles from '@/components/markdown.module.css';
 import { useEffect } from 'react';
 import hljs from 'highlight.js';
 import typescript from 'highlight.js/lib/languages/typescript';
