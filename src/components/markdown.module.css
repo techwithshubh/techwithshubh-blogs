@@ -28,3 +28,11 @@
   .markdown li {
     @apply list-disc m-4
   }
+
+  .markdown a {
+    @apply underline
+  }
+
+  .markdown p > code {
+    @apply text-soft-blue bg-blue-100 p-2 rounded
+  }

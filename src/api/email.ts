@@ -1,5 +1,6 @@
 'use server'
 
+import { redirect } from "next/navigation";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -8,6 +9,9 @@ export async function POST(receiver: string) {
   try {
     const name = process.env.SENDER_NAME;
     const email = process.env.SENDER_EMAIL;
+
+    //Save the entry in mongodb aswell
+
     const data = await resend.emails.send({
       from: `${name} <${email}>`,
       to: [receiver],
