@@ -347,7 +347,7 @@ Opentelemetry provides multiple auto instrumentations based on the nature of app
 
 **Installation**
 
-```
+```bash
 npm i @opentelemetry/sdk-trace-node \
  @opentelemetry/instrumentation-http
 ```

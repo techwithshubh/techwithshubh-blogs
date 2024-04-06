@@ -37,7 +37,6 @@ export default function RootLayout({
           sizes="16x16"
           href="/favicon/favicon-16x16.png"
         />
-        <link rel="manifest" href="/favicon/site.webmanifest" />
         <link
           rel="mask-icon"
           href="/favicon/safari-pinned-tab.svg"
@@ -51,7 +50,6 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-        {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" /> */}
       </head>
       <body className={inter.className}>
         <Header />

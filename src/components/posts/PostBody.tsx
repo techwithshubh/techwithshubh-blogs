@@ -14,9 +14,9 @@ type Props = {
   const PostBody = ({ content }: Props) => {
 
     useEffect(()=>{
-        hljs.registerLanguage('javascript', typescript);
+        hljs.registerLanguage('js', typescript);
         hljs.registerLanguage('bash', bash);
-        hljs.initHighlighting();
+        hljs.highlightAll()
     },[])
 
     return (

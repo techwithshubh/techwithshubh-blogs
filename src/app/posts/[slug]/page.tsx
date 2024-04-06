@@ -1,4 +1,3 @@
-import CoverImage from "@/components/posts/CoverImage";
 import DateFormatter from "@/components/posts/DateFormatter";
 import PostBody from "@/components/posts/PostBody";
 import { Tags } from "@/components/posts/Tags";
@@ -29,9 +28,7 @@ export default async function Post({ params }: Params) {
           <DateFormatter dateString={post.date} />
         </div>
         <Tags tags={post.tags} />
-        <div className="">
-          <PostBody content={content} />
-        </div>
+        <PostBody content={content} />
       </article>
     </div>
   );
@@ -39,7 +36,6 @@ export default async function Post({ params }: Params) {
 
 export async function generateStaticParams() {
   const posts = getAllPosts();
-
   return posts.map((post) => ({
     slug: post.slug,
   }));
