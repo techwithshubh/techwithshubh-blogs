@@ -162,6 +162,17 @@ class CoverLetterCrew:
 
 Finally, we create an instance of `CoverLetterCrew` and run the code, specifying the origin country, destination country, and occupation for the cover letter. The resulting cover letter is then printed to the console.
 
+```python
+if __name__ == "__main__":
+    trip_crew = CoverLetterCrew("India", "France", "Writer")
+    result = trip_crew.run()
+    print("\n\n########################")
+    print("## Here is your Cover Letter")
+    print("########################\n")
+    print(result)
+
+```
+
 This is a response from the `CoverLetterCrew`.
 
 ```txt
