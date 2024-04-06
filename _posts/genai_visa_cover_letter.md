@@ -15,6 +15,7 @@ In a podcast by [Radio Haanji](https://youtu.be/mkluVhq2HWA?si=4iTeehcPwTQjn752)
 
 - You should have Python 3 installed
 - You should be familiar with Python and [RAG framework](https://aws.amazon.com/what-is/retrieval-augmented-generation/)
+- You should have OpenAI API key. Get your free API Key from [here](https://platform.openai.com/api-keys)
 - You have a code editor installed (preferably VS Code)
 
 ### Goals
